@@ -1,0 +1,18 @@
+<body>
+    <div class="container">
+    <header>
+        <h1>Placard Printing App</h1>
+        <form class="new-placard">
+            <input type="text" name="text" placeholder="Enter Placard information"><br />
+            <input type="text" name="mailtype" placeholder="Enter type of mail"><button type="submit" name="submit" class="btn btn-success "> Add Placard</button>
+            
+        </form>
+    </header>
+
+    <ul>
+        {{#each placards}}
+            {{> placard}}
+        {{/each}}
+    </ul>
+    </div>
+</body>
